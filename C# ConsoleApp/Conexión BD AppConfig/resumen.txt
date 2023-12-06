@@ -1,0 +1,13 @@
+Dentro del proyecto, agregar la cadena de conexión hacia la base de datos desde el App.config:
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7" />
+    </startup>
+	<connectionStrings>
+		<add name="StrCnAutentiUserSql" connectionString="Data Source=TAZLSCE02;Database=NAMEDATABASE;Integrated Security=False;User Id=USERDATABASE;Password=PASSUSER;TrustServerCertificate=True" />
+		<add name="StrCnAutentiWindows" connectionString="Data Source=TAZLSCE02;Database=BDAUXILIAR;Integrated Security=True;TrustServerCertificate=True" />
+	</connectionStrings>
+</configuration>
